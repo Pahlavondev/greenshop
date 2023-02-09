@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/header/Header";
+import "./assets/style/global.scss";
+import Main from "./components/main/Main";
+import PlantsData from "./components/plants/PlantsData";
+import Flowers from "./components/flowers/Flowers";
+import Blogs from "./components/blogs/Blogs";
+import Footer from "./components/footer/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const handlerClick = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route exact path="/" element={<Header count={count} />} />
+        <Route path="/shop" element={<Header count={count} />} />
+        <Route path="/plant-care" element={<Header count={count} />} />
+        <Route path="/blogs" element={<Header count={count} />} />
+      </Routes>
+      <Main />
+      <PlantsData handlerClick={handlerClick} />
+      <Flowers />
+      <Blogs />
+      <Footer />
     </div>
   );
 }

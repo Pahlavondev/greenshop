@@ -1,0 +1,17 @@
+@import "../../assets/style/global.scss";
+
+.footer {
+  &__wrapper {
+    background-color: #fbfbfb;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $colorMain;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

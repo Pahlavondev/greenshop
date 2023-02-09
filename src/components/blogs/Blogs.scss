@@ -1,0 +1,25 @@
+@import "../../assets/style/global.scss";
+
+.blogs {
+  margin-bottom: 100px;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    text-align: center;
+    color: $colorMain;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 35px;
+  }
+}

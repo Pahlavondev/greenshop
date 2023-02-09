@@ -1,0 +1,55 @@
+@import "../../../assets/style/global.scss";
+
+.plants {
+  display: inline-block;
+
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-right: 40px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    background-color: #fbfbfb;
+    padding: 25px 5px;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  &__button:hover {
+    color: $colorGreen;
+  }
+
+  &__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $colorMain;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: $colorGreen;
+  }
+}

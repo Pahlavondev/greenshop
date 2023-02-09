@@ -1,0 +1,60 @@
+@import "../../../assets/style/global.scss";
+
+.flower {
+  width: 100%;
+  max-width: 586px;
+  background-color: #fbfbfb;
+  padding: 37px 30px 46px;
+
+  &__castus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $colorMain;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: #727272;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 27px;
+    background-color: $colorGreen;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}

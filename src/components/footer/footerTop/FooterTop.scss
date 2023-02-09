@@ -1,0 +1,104 @@
+@import "../../../assets/style/global.scss";
+
+.footerTop {
+  &__wrapper {
+    background-color: #fbfbfb;
+    padding: 25px 25px 24px 23px;
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 215px;
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 75%;
+    object-fit: cover;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: $colorMain;
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 345px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: $colorMain;
+    margin-bottom: 18px;
+  }
+
+  &__form {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 17px;
+  }
+
+  &__input {
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  &__button {
+    padding: 14px 26px;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: $colorGreen;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 255px;
+  }
+
+  &__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #727272;
+  }
+}

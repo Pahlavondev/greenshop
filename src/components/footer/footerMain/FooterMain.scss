@@ -1,0 +1,37 @@
+@import "../../../assets/style/global.scss";
+
+.FooterMain {
+  &__wrapper {
+    background: rgba(70, 163, 88, 0.1);
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 250px 20px 23px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $colorMain;
+    width: 100%;
+    max-width: 176px;
+    margin-bottom: 0;
+  }
+}

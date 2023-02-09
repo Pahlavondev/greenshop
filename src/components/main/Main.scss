@@ -1,0 +1,90 @@
+@import "../../assets/style/global.scss";
+
+.Carousel-root-1 {
+  margin-bottom: 30px;
+}
+
+.main {
+  &__inner {
+    background: linear-gradient(
+      97.77deg,
+      rgba(245, 245, 245, 0.5) -23.46%,
+      rgba(245, 245, 245, 0.5) 107.51%
+    );
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 646px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: $colorMain;
+    margin-bottom: 5px;
+  }
+
+  &__span {
+    color: $colorGreen;
+  }
+
+  &__description {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $colorMain;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+    margin-bottom: 44px;
+    width: 100%;
+    max-width: 557px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 11px 27px;
+    background-color: $colorGreen;
+    border-radius: 6px;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__image {
+    width: 25%;
+    object-fit: cover;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+  }
+}
